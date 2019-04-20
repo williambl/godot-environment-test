@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Ground15_col+disp.png-e55fcdd72d933cdd78467533b65f9b14.stex"
+path="res://.import/detail.png-4a46063becb35b03db38cde8e98909f9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Ground15_col+disp.png"
-dest_files=[ "res://.import/Ground15_col+disp.png-e55fcdd72d933cdd78467533b65f9b14.stex" ]
+source_file="res://terrain/detail.png"
+dest_files=[ "res://.import/detail.png-4a46063becb35b03db38cde8e98909f9.stex" ]
 
 [params]
 
@@ -24,11 +24,11 @@ flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
-process/fix_alpha_border=true
+process/fix_alpha_border=false
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
