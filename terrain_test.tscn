@@ -1,14 +1,15 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://addons/zylann.hterrain/hterrain.gd" type="Script" id=1]
 [ext_resource path="res://addons/zylann.hterrain/tools/icons/icon_heightmap_node.svg" type="Texture" id=2]
 [ext_resource path="res://terrain/data.hterrain" type="Resource" id=3]
-[ext_resource path="res://textures/Ground23_col.jpg" type="Texture" id=4]
-[ext_resource path="res://textures/Ground23_nrm.jpg" type="Texture" id=5]
-[ext_resource path="res://textures/Ground22_col.jpg" type="Texture" id=6]
-[ext_resource path="res://textures/Rocks02_col.jpg" type="Texture" id=7]
-[ext_resource path="res://textures/Rocks02_nrm.jpg" type="Texture" id=8]
-[ext_resource path="res://player/Player.tscn" type="PackedScene" id=9]
+[ext_resource path="res://textures/Rock08_col+disp.png" type="Texture" id=4]
+[ext_resource path="res://textures/Rock08_nrm+rgh.png" type="Texture" id=5]
+[ext_resource path="res://textures/Ground23_col+disp.png" type="Texture" id=6]
+[ext_resource path="res://textures/Ground23_nrm+rgh.png" type="Texture" id=7]
+[ext_resource path="res://textures/Ground15_col+disp.png" type="Texture" id=8]
+[ext_resource path="res://textures/Ground15_nrm+rgh.png" type="Texture" id=9]
+[ext_resource path="res://player/Player.tscn" type="PackedScene" id=10]
 
 [sub_resource type="ProceduralSky" id=1]
 sky_top_color = Color( 0.396078, 0.639216, 0.776471, 1 )
@@ -19,12 +20,10 @@ sun_longitude = -90.0
 [sub_resource type="Environment" id=2]
 background_mode = 2
 background_sky = SubResource( 1 )
-fog_enabled = true
 fog_depth_begin = 50.0
 fog_depth_end = 750.5
 fog_depth_curve = 0.63728
 tonemap_mode = 3
-auto_exposure_enabled = true
 ssao_enabled = true
 glow_enabled = true
 
@@ -47,9 +46,9 @@ shader_params/u_globalmap_blend_distance = null
 ground/albedo_bump_0 = ExtResource( 4 )
 ground/normal_roughness_0 = ExtResource( 5 )
 ground/albedo_bump_1 = ExtResource( 6 )
-ground/normal_roughness_1 = ExtResource( 5 )
-ground/albedo_bump_2 = ExtResource( 7 )
-ground/normal_roughness_2 = ExtResource( 8 )
+ground/normal_roughness_1 = ExtResource( 7 )
+ground/albedo_bump_2 = ExtResource( 8 )
+ground/normal_roughness_2 = ExtResource( 9 )
 ground/albedo_bump_3 = null
 ground/normal_roughness_3 = null
 _detail_objects_data = null
@@ -61,6 +60,6 @@ light_energy = 5.0
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource( 2 )
 
-[node name="Player" parent="." instance=ExtResource( 9 )]
+[node name="Player" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 291.859, 72.6803, 102.638 )
 
